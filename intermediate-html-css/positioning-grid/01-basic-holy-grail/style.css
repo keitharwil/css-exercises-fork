@@ -5,6 +5,9 @@ html {
 }
 
 .container {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: 20% 80%;
   text-align: center;
   height: 100%;
   padding: 16px;
@@ -18,13 +21,16 @@ html {
   font-weight: bold;
   color: white;
   border-radius: 15px;
+
 }
 
 .header {
+  grid-column: span 2;
   background-color: #006157;
 }
 
 .sidebar {
+  grid-row: span 2;
   background-color: #005B94;
 }
 
@@ -37,6 +43,7 @@ html {
 }
 
 .footer {
+  grid-column: span 2;
   background-color: #393f4d;
 }
 
